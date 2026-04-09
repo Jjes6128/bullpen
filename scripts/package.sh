@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
-# package.sh — Create output packages for different pricing tiers
+# package.sh - Create output packages for different pricing tiers
 #
 # Reads from ./output/ and creates:
-#   output/book-only/         — Basic tier (book in all formats)
-#   output/book-plus-extras/  — Premium tier (book + extra PDFs)
+#   output/book-only/         - Basic tier (book in all formats)
+#   output/book-plus-extras/  - Premium tier (book + extra PDFs)
 #
 # CUSTOMISE: Update file paths, README text, and tier contents.
 #
@@ -40,7 +40,7 @@ if [ ! -f "$MOBI_FILE" ]; then
     ebook-convert "$OUTPUT_DIR/$BOOK_NAME.epub" "$MOBI_FILE" --no-inline-toc > /dev/null 2>&1
     echo "  Done."
   else
-    echo "WARNING: ebook-convert (Calibre) not found — Mobi will be skipped."
+    echo "WARNING: ebook-convert (Calibre) not found - Mobi will be skipped."
     echo "  Install with: brew install --cask calibre"
     MOBI_FILE=""
   fi
@@ -74,7 +74,7 @@ Thank you for your purchase.
 This folder contains the book in multiple formats:
 - PDF (for desktop, tablets, and printing)
 - ePub (for Apple Books and most e-readers)
-- Mobi (for Kindle — sideload via Send to Kindle)
+- Mobi (for Kindle - sideload via Send to Kindle)
 
 DRM-free. Read it anywhere.
 
@@ -102,7 +102,7 @@ fi
 
 # CUSTOMISE: Edit this README for your premium tier
 cat > "$PREMIUM/README.txt" << 'EOF'
-Your Book Title: Your Subtitle — Premium Edition
+Your Book Title: Your Subtitle - Premium Edition
 By Your Name
 
 Thank you for your purchase.

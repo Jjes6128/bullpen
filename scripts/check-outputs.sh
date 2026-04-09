@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# check-outputs.sh — Verify all output files match the manuscript source.
+# check-outputs.sh - Verify all output files match the manuscript source.
 #
 # Extracts text from every generated PDF and EPUB, then compares key
 # sentences from the source markdown against each output to catch
@@ -117,7 +117,7 @@ total_issues = 0
 # Check PDFs
 for label, path in PDF_OUTPUTS.items():
     if not os.path.exists(path):
-        print(f"  SKIP: {label} — file not found ({path})")
+        print(f"  SKIP: {label} - file not found ({path})")
         continue
     print(f"Checking: {label}")
     output = normalise(pdf_text(path))

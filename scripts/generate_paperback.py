@@ -69,7 +69,7 @@ def strip_html_divs(html):
 
 def build_html():
     # The full CSS and HTML assembly for a 6x9 KDP paperback.
-    # This is long but self-contained — edit the CSS to change styling.
+    # This is long but self-contained - edit the CSS to change styling.
 
     css = f"""
 @page {{
@@ -173,7 +173,7 @@ hr::after {{ content: "* * *"; font-size: 10pt; color: #888; letter-spacing: 0.3
   <div class="book-author">{BOOK_AUTHOR}</div>
 </div>''')
 
-    # Copyright — CUSTOMISE
+    # Copyright - CUSTOMISE
     sections.append(f'''
 <div class="copyright-page">
   <p><em>{BOOK_TITLE}: {BOOK_SUBTITLE}</em></p>
@@ -186,17 +186,17 @@ hr::after {{ content: "* * *"; font-size: 10pt; color: #888; letter-spacing: 0.3
   <p>First edition, {BOOK_YEAR}</p>
 </div>''')
 
-    # Dedication — CUSTOMISE or remove
+    # Dedication - CUSTOMISE or remove
     sections.append('''
 <div class="dedication-page">
   <p><em>Your dedication here.</em></p>
 </div>''')
 
-    # Epigraph — CUSTOMISE or remove
+    # Epigraph - CUSTOMISE or remove
     sections.append('''
 <div class="epigraph-page">
   <blockquote>"Your favourite quote."</blockquote>
-  <p class="attribution">&mdash; Attribution</p>
+  <p class="attribution">- Attribution</p>
 </div>''')
 
     # TOC
@@ -254,7 +254,7 @@ hr::after {{ content: "* * *"; font-size: 10pt; color: #888; letter-spacing: 0.3
   <p>Your bio here.</p>
 </div>''')
 
-    # Promo page — CUSTOMISE or remove
+    # Promo page - CUSTOMISE or remove
     sections.append(f'''
 <div class="promo-page">
   <p>For more, visit:</p>
@@ -299,7 +299,7 @@ def main():
         print(f"\n  Generated: {os.path.basename(pdf_path)}")
         print(f"  Pages: {pages}")
         if pages > 150:
-            print(f"  Note: Over 150 pages — set INSIDE_MARGIN = '0.875in' in this script.")
+            print(f"  Note: Over 150 pages - set INSIDE_MARGIN = '0.875in' in this script.")
         spine = pages * 0.0025
         print(f"  Estimated spine: {spine:.3f} inches")
     except ImportError:

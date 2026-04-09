@@ -4,9 +4,9 @@ Ready-to-post content extracted from your book. Post every 2-3 days.
 
 ## Content types
 
-1. **Chapter story posts** — one real story per chapter, posted as a standalone narrative
-2. **Template/extra preview posts** — if you sell a premium tier, show what's included
-3. **FAQ posts** — standalone answers to reader questions
+1. **Chapter story posts** - one real story per chapter, posted as a standalone narrative
+2. **Template/extra preview posts** - if you sell a premium tier, show what's included
+3. **FAQ posts** - standalone answers to reader questions
 
 ## Suggested posting cadence
 
@@ -33,6 +33,6 @@ promotion/
 
 - Every post ends with a link to your book's landing page
 - Chapter posts sell the book. Template posts sell the upgrade.
-- FAQ posts build trust and reach — they're standalone value.
+- FAQ posts build trust and reach - they're standalone value.
 - Don't write new promotional copy. Extract the best passages from your manuscript.
 - Your book is the content. The social posts are just excerpts with a link.

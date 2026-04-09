@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #
-# check-prose.sh — Run spelling, grammar & style checks on the manuscript
+# check-prose.sh - Run spelling, grammar & style checks on the manuscript
 #
 # Uses Vale (https://vale.sh) plus custom grammar spot-checks.
 #
 # Usage:
-#   ./check-prose.sh                                    — check all chapters
-#   ./check-prose.sh manuscript/part-1/01-chapter.md    — check a specific file
+#   ./check-prose.sh                                    - check all chapters
+#   ./check-prose.sh manuscript/part-1/01-chapter.md    - check a specific file
 #
 # CUSTOMISE: Update BOOK_FILES with your chapter file list.
 

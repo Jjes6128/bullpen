@@ -113,7 +113,7 @@ def generate_pdf():
         print(f"  Done.")
         return True
     except ImportError:
-        print("  WARNING: weasyprint not available — skipping PDF.")
+        print("  WARNING: weasyprint not available - skipping PDF.")
         return False
 
 
@@ -209,7 +209,7 @@ def generate_free_chapter():
         print(f"  Done.")
         return True
     except ImportError:
-        print("  WARNING: weasyprint not available — skipping free chapter PDF.")
+        print("  WARNING: weasyprint not available - skipping free chapter PDF.")
         return False
     finally:
         if os.path.exists(tmp_html):

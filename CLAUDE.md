@@ -17,19 +17,19 @@ python3 scripts/generate_cover.py     # KDP full cover wrap PDF
 
 ## Project structure
 
-- `manuscript/` — Book content as markdown. One file per chapter, organised by part (`part-1/`, `part-2/`, etc.). Front matter (cover, copyright, dedications, epigraph) and back matter (about-the-author, back-cover) are top-level in `manuscript/`.
-- `scripts/` — All build, generation, packaging, and quality-check scripts.
-- `docs/` — Writing support files: manuscript progress tracker, quality audit rubric, writing voice template, beta reader note.
-- `styles/epub.css` — EPUB stylesheet. HTML/PDF styles live inline in `scripts/build.sh`. Paperback styles live in `scripts/generate_paperback.py`.
-- `images/cover/` — Front cover image (300 DPI JPEG).
-- `fonts/` — Custom fonts if needed.
-- `output/` — All generated files (gitignored).
-- `templates/` — Extra PDFs for premium tier (worksheets, frameworks, etc.).
-- `promotion/` — Social media content extracted from chapters.
+- `manuscript/` - Book content as markdown. One file per chapter, organised by part (`part-1/`, `part-2/`, etc.). Front matter (cover, copyright, dedications, epigraph) and back matter (about-the-author, back-cover) are top-level in `manuscript/`.
+- `scripts/` - All build, generation, packaging, and quality-check scripts.
+- `docs/` - Writing support files: manuscript progress tracker, quality audit rubric, writing voice template, beta reader note.
+- `styles/epub.css` - EPUB stylesheet. HTML/PDF styles live inline in `scripts/build.sh`. Paperback styles live in `scripts/generate_paperback.py`.
+- `images/cover/` - Front cover image (300 DPI JPEG).
+- `fonts/` - Custom fonts if needed.
+- `output/` - All generated files (gitignored).
+- `templates/` - Extra PDFs for premium tier (worksheets, frameworks, etc.).
+- `promotion/` - Social media content extracted from chapters.
 
 ## config.json
 
-`config.json` is the single source of truth for all book metadata: title, subtitle, author, language, website, year, buy URL, free chapter details, and the full manuscript structure (front matter, parts, chapters, back matter). All scripts read from it — no metadata is hardcoded in scripts.
+`config.json` is the single source of truth for all book metadata: title, subtitle, author, language, website, year, buy URL, free chapter details, and the full manuscript structure (front matter, parts, chapters, back matter). All scripts read from it - no metadata is hardcoded in scripts.
 
 When adding or removing chapters, update only `config.json`. When changing the title or author, update only `config.json`.
 
@@ -60,7 +60,7 @@ All book prose is written by the author. Claude Code does not write or generate 
 
 ## File dependencies
 
-All metadata and chapter structure lives in `config.json`. When adding chapters, removing chapters, or changing the title/author, update only `config.json` — all scripts read from it automatically.
+All metadata and chapter structure lives in `config.json`. When adding chapters, removing chapters, or changing the title/author, update only `config.json` - all scripts read from it automatically.
 
 When adding a new chapter:
 1. Create the markdown file in `manuscript/part-N/`

@@ -8,22 +8,22 @@
 
 ---
 
-Write your book in markdown. Bullpen turns it into PDF, EPUB, MOBI, HTML, a KDP-ready paperback interior, a full cover wrap, and tiered digital packages — ready to sell.
+Write your book in markdown. Bullpen turns it into PDF, EPUB, MOBI, HTML, a KDP-ready paperback interior, a full cover wrap, and tiered digital packages  - ready to sell.
 
 Built by [Ben Howdle](https://benhowdle.im).
 
 ## What this gives you
 
-- **Write in markdown** — one file per chapter, organised by part
-- **Build to every format** — PDF, EPUB, MOBI, HTML, and a KDP paperback interior
-- **Two-tier packaging** — a "book only" and a "book + extras" package for different price points
-- **Free chapter lead magnet** — generates a standalone PDF of one chapter for email signups
-- **KDP paperback + cover** — print-ready interior PDF and full cover wrap with spine
-- **Prose linting** — Vale integration with sensible defaults for narrative non-fiction
-- **Output verification** — spot-checks generated PDFs against source to catch dropped words
-- **Quality audit framework** — a scoring rubric for assessing your book before launch
-- **Voice codification** — a template for defining your writing voice to maintain consistency
-- **Promotion content** — templates for extracting social media posts from your chapters
+- **Write in markdown**  - one file per chapter, organised by part
+- **Build to every format**  - PDF, EPUB, MOBI, HTML, and a KDP paperback interior
+- **Two-tier packaging**  - a "book only" and a "book + extras" package for different price points
+- **Free chapter lead magnet**  - generates a standalone PDF of one chapter for email signups
+- **KDP paperback + cover**  - print-ready interior PDF and full cover wrap with spine
+- **Prose linting**  - Vale integration with sensible defaults for narrative non-fiction
+- **Output verification**  - spot-checks generated PDFs against source to catch dropped words
+- **Quality audit framework**  - a scoring rubric for assessing your book before launch
+- **Voice codification**  - a template for defining your writing voice to maintain consistency
+- **Promotion content**  - templates for extracting social media posts from your chapters
 
 ## Quickstart
 
@@ -31,7 +31,7 @@ Clone the repo, open [Claude Code](https://docs.anthropic.com/en/docs/claude-cod
 
 > "Install any missing dependencies, then set up this repo for my book called [title] by [name]. It has [n] parts with [n] chapters each."
 
-Claude Code reads the `CLAUDE.md` in this repo automatically — it knows the full project structure and will update `config.json`, create your chapter files, and install dependencies in one go.
+Claude Code reads the `CLAUDE.md` in this repo automatically  - it knows the full project structure and will update `config.json`, create your chapter files, and install dependencies in one go.
 
 When you're ready to build:
 
@@ -45,7 +45,7 @@ If you're not using Claude Code, here's how to set up the repo yourself.
 
 ```bash
 brew install pandoc vale
-brew install --cask calibre  # optional — needed for MOBI generation
+brew install --cask calibre  # optional  - needed for MOBI generation
 pip install -r requirements.txt
 vale sync
 ```
@@ -82,14 +82,14 @@ python3 scripts/generate_cover.py      # KDP cover wrap PDF
 
 This repo is optimised for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). The `CLAUDE.md` file gives Claude full context on the pipeline, so you can ask it to:
 
-- **Set up your book** — update the title, author, and metadata across all config files at once
-- **Add or reorder chapters** — create new chapter files and update the file lists in all 5 scripts that need them
-- **Run and debug builds** — execute the pipeline, diagnose errors, and fix issues
-- **Lint your prose** — run Vale checks and fix warnings
-- **Structure voice note transcriptions** — turn raw dictation into formatted chapter drafts
-- **Tweak styling** — adjust CSS across the three output targets (HTML/PDF, EPUB, paperback)
-- **Manage promotion content** — extract social posts from your chapters
-- **Pre-launch quality checks** — run output verification and review the quality audit
+- **Set up your book**  - update the title, author, and metadata across all config files at once
+- **Add or reorder chapters**  - create new chapter files and update the file lists in all 5 scripts that need them
+- **Run and debug builds**  - execute the pipeline, diagnose errors, and fix issues
+- **Lint your prose**  - run Vale checks and fix warnings
+- **Structure voice note transcriptions**  - turn raw dictation into formatted chapter drafts
+- **Tweak styling**  - adjust CSS across the three output targets (HTML/PDF, EPUB, paperback)
+- **Manage promotion content**  - extract social posts from your chapters
+- **Pre-launch quality checks**  - run output verification and review the quality audit
 
 ## Directory structure
 
@@ -136,7 +136,7 @@ This repo is optimised for [Claude Code](https://docs.anthropic.com/en/docs/clau
 │   ├── QUALITY-AUDIT.md      # Pre-launch quality rubric
 │   ├── writing-voice.md      # Your voice definition (fill in)
 │   └── beta-reader-note.md   # Note for beta readers
-├── config.json           # Book metadata — single source of truth
+├── config.json           # Book metadata  - single source of truth
 ├── requirements.txt      # Python dependencies
 └── .vale.ini             # Prose linter config
 ```
@@ -147,7 +147,7 @@ This repo is optimised for [Claude Code](https://docs.anthropic.com/en/docs/clau
 
 Write your chapters in `manuscript/` as markdown files. One file per chapter. Organise by part.
 
-Each chapter can follow whatever structure works for you. The pipeline doesn't enforce a structure — it just concatenates your files in order and converts them.
+Each chapter can follow whatever structure works for you. The pipeline doesn't enforce a structure  - it just concatenates your files in order and converts them.
 
 ### Building
 
@@ -161,15 +161,15 @@ Each chapter can follow whatever structure works for you. The pipeline doesn't e
 ### Packaging
 
 `scripts/package.sh` creates output directories for each pricing tier:
-- `output/book-only/` — the book in all formats + a README
-- `output/book-plus-extras/` — the book + any extra PDFs (templates, worksheets, etc.)
+- `output/book-only/`  - the book in all formats + a README
+- `output/book-plus-extras/`  - the book + any extra PDFs (templates, worksheets, etc.)
 
 Each directory is ready to upload to Google Drive, Gumroad, or wherever you deliver files.
 
 ### Quality control
 
-- `scripts/check-prose.sh` — runs Vale linting + custom grammar checks
-- `scripts/check-outputs.sh` — extracts sentences from your markdown and verifies they appear in the generated PDFs (catches conversion errors, dropped words, encoding issues)
+- `scripts/check-prose.sh`  - runs Vale linting + custom grammar checks
+- `scripts/check-outputs.sh`  - extracts sentences from your markdown and verifies they appear in the generated PDFs (catches conversion errors, dropped words, encoding issues)
 
 ### KDP paperback
 
@@ -189,7 +189,7 @@ The `promotion/` directory holds ready-to-post social content extracted from you
 
 ### Book metadata
 
-Edit `config.json` — this is the single source of truth for your book's title, author, subtitle, chapter structure, and other metadata. All scripts read from it automatically.
+Edit `config.json`  - this is the single source of truth for your book's title, author, subtitle, chapter structure, and other metadata. All scripts read from it automatically.
 
 ### Styling
 
@@ -200,9 +200,9 @@ Edit `config.json` — this is the single source of truth for your book's title,
 ### Per-script settings
 
 Some settings stay in individual scripts (marked with `# CUSTOMISE`):
-- `scripts/generate_cover.py` — cover colours, back cover copy, page count
-- `scripts/package.sh` — README text for each pricing tier
-- `scripts/generate_final.py` — free chapter HTML template
+- `scripts/generate_cover.py`  - cover colours, back cover copy, page count
+- `scripts/package.sh`  - README text for each pricing tier
+- `scripts/generate_final.py`  - free chapter HTML template
 
 ## Credits
 
@@ -210,4 +210,4 @@ Created by [Ben Howdle](https://benhowdle.im).
 
 ## License
 
-MIT — use it for your own book, modify it, share it.
+MIT  - use it for your own book, modify it, share it.

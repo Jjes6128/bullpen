@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #
-# build-final.sh — Full build pipeline
+# build-final.sh - Full build pipeline
 #
 # Steps:
-#   1. build.sh           — Markdown → styled HTML
-#   2. generate_final.py  — EPUB + PDF + free chapter
-#   3. package.sh         — Output packages
-#   4. check-outputs.sh   — Verify outputs match source
+#   1. build.sh           - Markdown → styled HTML
+#   2. generate_final.py  - EPUB + PDF + free chapter
+#   3. package.sh         - Output packages
+#   4. check-outputs.sh   - Verify outputs match source
 #
 # Usage: ./build-final.sh
 # Output: ./output/
@@ -16,7 +16,7 @@ SCRIPTS="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPTS/.."
 
 echo "==========================================="
-echo "  Bullpen — Full Build"
+echo "  Bullpen - Full Build"
 echo "==========================================="
 echo ""
 

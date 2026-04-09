@@ -10,8 +10,8 @@
 
 | Status | Meaning | Count |
 |--------|---------|-------|
-| 🟢 | Done — full prose, reads like a chapter | 0 |
-| 🟡 | In progress — has content but needs work | 0 |
+| 🟢 | Done - full prose, reads like a chapter | 0 |
+| 🟡 | In progress - has content but needs work | 0 |
 | 🔴 | Not started | 0 |
 
 ---
